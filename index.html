@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gradient-to-r from-[#0D9DA4] to-[#FCE688]">
+    <div class="w-full flex justify-center items-center h-screen">
+        <div class="w-[400px] h-[400px] bg-white border border-2 rounded-2xl">
+            <!-- Text in the container -->
+            <div class="m-2 p-2 text-center">
+                <h2 class="text-[#567CBD] text-xl">Higher or Lower Game</h2>
+                <h1 id="result" class="text-3xl text-[#1b1b1e] font-serif font-semibold">Guess the number!!</h1>
+                <p class="text-[#567CBD]">There's a number in my head between 0 and 9. Wanna guess the number??</p>
+            </div>
+            
+            <!-- Input element to take input from the user -->
+            <div class="flex justify-center mt-16 mb-4">
+                <input placeholder="?" name="number" id="numberInput" class="border border-2 rounded-md text-center">
+                <br/>
+                <br/>  
+            </div>
+            
+            <!-- Guess button -->
+            <div class="flex justify-center">
+                <button onclick="compareNumber()" class="bg-[#e8b974] border border-2 px-8 py-2 rounded-full transition duration-300 hover:-translate-y-1 hover:bg-yellow-600">Guess</button>
+            </div>
+            
+        </div>
+    </div>
+    
+  
+    
+
+    <script type="text/javascript" src="javaScript.js"></script>
+</body>
+</html>
